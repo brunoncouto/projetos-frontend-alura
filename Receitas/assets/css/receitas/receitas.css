@@ -1,0 +1,19 @@
+.receitas{
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column; /*orientação da disposição em linhas ou colunas*/
+    margin-bottom: 5rem;
+}
+@media screen and (min-width: 0) {
+    .receitas{
+        margin-right: 1rem;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 850px) {
+    .receitas{
+        margin-right: 2.5rem;
+        width: calc(25% - 5rem);
+    }
+}
+

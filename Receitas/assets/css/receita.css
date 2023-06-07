@@ -1,0 +1,15 @@
+.receita{
+    background: #e5e5e5;
+    display: flex;
+
+}
+@media screen and (min-width: 0) {
+    .receita{
+        padding: 5rem 0 0 1rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .receita{
+        padding: 5rem 0 0 5rem;
+    }
+}

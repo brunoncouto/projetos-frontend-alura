@@ -1,0 +1,139 @@
+/*código para criar variáveis em CSS*/
+:root{
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #00030c;
+    --fonte-principal: 'Inter';
+}
+
+body{
+    background-color: var(--cor-de-fundo); /*a chamada da variável é feita com var()*/
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal), sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.titulo-pagina{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.principal{
+    background-image: url("../img/Background.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+}
+
+.container-caixa{
+    margin: 0 6em;
+}
+
+.secundario-img{
+    margin: 1em 0 2em 0;
+}
+
+.botao-link{
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    color: var(--branco-principal);
+    display: block;
+    margin-bottom: 1em;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.botao-secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    text-decoration: none;
+}
+
+.container-aviso{
+    color: var(--cinza-secundario);
+    font-size: 12px;
+}
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario-img{
+    width: 80%;
+}
+
+.container-descricao{
+    padding: 2em;
+}
+
+.container-descricao:nth-child(3){
+    padding: 0;
+}
+
+.descricao-titulo{
+    color: var(--branco-principal);
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+}
+
+.descricao-texto{
+    color: var(--cinza-secundario);
+}
+
+.botao-link-secundario{
+    display: inline-block;
+    margin-top: 1em;
+}
+.dispostivos-titulo{
+    margin-bottom: 6em;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+.dispositivos-lista{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 6em;
+}
+.lista-item{
+    font-weight: 700;
+    text-align: center;
+}
+.rodape{
+    text-align: center;
+}
+.rodape-lista{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 2em;
+    margin: 3em 0;
+}
+
+.lista-link a{
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+
+.lista-link a:hover{
+    color: var(--botao-azul);
+}
+.rodape-texto{
+    color: var(--cinza-secundario);
+    font-size: 12px;
+    margin-bottom: 2em;
+}
+.rodape-texto:last-child{
+    margin-bottom: 6em;
+}

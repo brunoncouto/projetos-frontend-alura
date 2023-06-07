@@ -1,0 +1,48 @@
+/*
+background-color = cor de fundo
+font-size = tamanho da fonte
+color = atirbui cor ao elemento
+padding = atribui espaço interno ao elemento, para os lados e para cima
+margin = espaçamento externo, para os dois lados e para cima e para baixo
+width = altera a largura do elemento
+*/
+
+#banner{
+    width: 100%;
+}
+.principal{
+    background-color: grey;
+    padding: 30px;
+}
+.titulo-centralizado{
+    text-align: center;
+}
+.titulo-principal{
+    padding-left: 20px;
+}
+p{
+    text-align: center;
+}
+#missao{
+    font-size: 20px;
+}
+em strong{
+    color: red;
+}
+.beneficios{
+    background-color: white;
+    padding: 20px;
+}
+.itens{
+    font-style: italic;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+.imagem-beneficio{
+    width: 50%;
+}

@@ -1,0 +1,32 @@
+.app {
+    background: #f1f1f1;
+    display: grid;  /*determina que o body se comporte como GRID*/
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas:/*delimita as areas do site através de strings*/
+    'cabecalho'
+    'conteudo'
+    'rodape';
+    grid-template-columns: auto; /*define o tamanho das colunas*/
+    grid-template-rows: 50px auto auto; /*define o tamanho das linhas que delimitam as areas do grid*/
+}
+
+.cabecalho {
+    align-items: center;
+    display: flex;
+    grid-area: cabecalho;/*recebe o nome da area que se designa*/
+    padding: 0 2rem;
+}
+ 
+.conteudo {
+    grid-area: conteudo;
+    padding: 0 2rem;
+}
+
+.rodape {
+    background: #fdfdfd;
+    color: #333333;
+    font-size: .8rem;
+    grid-area: rodape;
+    padding: 1rem;
+    text-align: center;
+}
